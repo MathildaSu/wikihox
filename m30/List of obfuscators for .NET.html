@@ -1,0 +1,355 @@
+ xml:space="preserve" bytes="11241"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=List of obfuscators for .NET|timestamp=20160605124806|year=2016|month=June|day=5|substed=yes}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=List of obfuscators for .NET|date=5 June 2016|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{multiple issues|
+{{notability|Lists|date=February 2014}}
+{{advert|date=February 2014}}
+{{refimprove|date=August 2014}}
+{{Underlinked|date=December 2013}}
+{{original research|date=June 2016}}
+{{Notability|date=June 2016}}
+}}
+
+
+[[Compiler|Compiling]] a .NET project generates an [[Assembly (CLI)|assembly]] that contains Intermediate Language ('''[[Common Intermediate Language|CIL]]''') instructions, managed resources and meta data describing the types, methods, properties, fields and events in the assembly. This metadata allows inspecting the assembly through the [[Reflection (computer programming)|reflection]] API which makes dynamic code like data bindings in [[Windows Presentation Foundation|WPF]] possible. But this metadata, and the high-level nature of CIL instructions, makes it possible to understand the assembly structure and the method instructions in order to decompile it to high-level source code. In many cases the generated source code looks similar to the original source code used by the compiler. It lacks code formatting and comments but it has all the type and member names. An attacker could use this information to understand how a program was implemented to manipulate it or to extract sensitive information or algorithms.
+
+'''[[Obfuscation (software)|Obfuscation]]''' is the process of modifying an assembly so that it is no longer useful to a hacker but remains usable to the machine for executing the intended operations. While it may change metadata or the actual method instructions, it does not alter the logic flow or the output of the program. There are several techniques that can be used which are described below.
+
+There are a number of .NET obfuscators available including a free one that is part of Visual Studio (Dotfuscator CE). This list includes most of the solutions available in market today (January 2016). Different obfuscators support different protection methods, however many share common features which can be used for the purpose of comparison. The list is followed by a brief explanation of each one of the features on which the comparison is based on.
+
+{| class="wikitable sortable"
+! Name
+! Price
+! Last<br>Release
+! Tamper<br>Defense
+! Anti<br>Decompiler
+! String<br>Encryption
+! Control Flow<br>Obfuscation
+! Method Call<br>Redirection
+! Compression
+! Code<br>Encryption
+! Code<br>Virtualization
+! Data<br>Virtualization
+! Debug<br>Symbols
+|-
+| Agile.NET
+| $795
+| 2016
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+|-
+| Babel Obfuscator
+| 115–245&nbsp;€
+| 2016
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| ConfuserEx
+| Free
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+|-
+| Crypto Obfuscator
+| $149–$4,469
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Disguiser.NET
+| $14.99–$499.99
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Dotfuscator Community Edition
+| Free inside Visual Studio
+| 2016
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+| Dotfuscator Professional Edition
+| On request ($1,900–7,800)
+| 2016
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{NA}}
+| {{Yes}}
+| {{NA}}
+| {{NA}}
+| {{NA}}
+| {{Yes}}
+|-
+| DotNet Patcher
+| Free
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Eazfuscator.NET
+| $399
+| 2016 
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+| Eziriz .NET Reactor 
+| $179 
+| 2016
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| ILProtector
+| Free demo / $199
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| .NETGuard
+| Free demo / $2 - $9
+| 2016
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+|-
+| NetWinProtector (Protector)
+| $100
+| 2014
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Obfuscar
+| Free
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Unknown}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Salamander
+| $1,899
+| 2006
+| {{Yes}}
+| {{Unknown}}
+| {{Unknown}}
+| {{No}}
+| {{Unknown}}
+| {{Unknown}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| SeeUnsharp .NET Obfuscator
+| 99–499&nbsp;€
+| 2016
+| {{Coming soon}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+| {{Yes}}
+|-
+| SharpObfuscator
+| Free
+| 2007
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Skater
+| $79.90–$1,709.99
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+| Smart Assembly
+| $993–$1,493
+| 2015
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+|-
+| Spices
+| $399.90–$6,499.90
+| 2013
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Unknown}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Unknown}}
+|-
+|}
+
+==Name Obfuscation==
+Name obfuscation changes the name of types and members. Name obfuscation makes the decompiled source harder to understand but the overall flow of the code is not obscured. The new names can follow different schemes like "a", "b", "c", or numbers, characters from non-Latin scripts, unprintable characters or invisible characters. Names may be used multiple times in a scope by using [[Function overloading|overloading]]. While proper names are technically not required to execute the assembly, the resulting assembly would be unverifiable.
+
+Name obfuscation is the most basic technique that is used by every .NET obfuscator solution.
+
+==String Encryption==
+In a managed assembly all strings are clearly identifiable and readable. Even when methods are renamed, strings used in a method may give clues about the purpose of the method. This includes messages (especially error messages) that are displayed to the user. Those strings can be tracked down to the code that uses them. String encryption works by modifying all strings in the assembly and restore their original value at runtime. Since the string data must be restored automatically at runtime, usually without the user providing a decryption key, the data cannot actually be encrypted but only encoded. The algorithm that decodes the data is always included in the obfuscated assembly. This process may affect the runtime performance of the program, either once at startup or for every string usage.
+
+==Control Flow Obfuscation==
+Control flow obfuscation is about modifying the program so that it yields the same result when run, but is impossible to decompile into a well-structured source code and is more difficult to understand. Most code obfuscators would replace CIL instructions produced by a .NET compiler with <code>goto</code>s and other instructions that may not be decompiled into a valid source code. This process may affect the runtime performance of a method.
+
+==Method Call Redirection==
+The way CIL instructions work references to external types and methods are clearly visible and will be unaffected by name obfuscation and control flow obfuscation. Even without reasonable names, the fact that a method makes use of certain [[Standard Libraries (CLI)|framework classes]] like I/O, networking or cryptography can draw attention to it. Calls to suspicious methods can be redirected through a simple generated method that only wraps the original call. This wrapper method can be renamed and the called method's name will no longer appear in the obfuscated method body. The Just-In-Time compiler ([[Just-in-time compilation|JIT]]) will normally inline such short wrapper methods so that it does not affect runtime performance.
+
+==Code Encryption==
+Code encryption protects the CIL instructions by [[Encryption|encrypting]] them and stripping the original instructions from the assembly. The encrypted instructions are kept in a separate storage. When the assembly is loaded a native runtime executive assumes control of portions of the .NET runtime and manages decrypting the CIL as needed. If native code is involved, the application may not run on [[Cross-platform|different platforms]] anymore.
+
+==Code Virtualization==
+Code virtualization converts the CIL code into virtual opcodes that will only be understood by a secure [[virtual machine]]. As opposed to protecting CIL code through encryption where the encrypted code must be decrypted back into CIL before it can be executed by the [[Common Language Runtime|CLR]], code virtualization uses a virtual machine which directly processes the protected code in the form of a virtual machine language. Code virtualization feature is by far the strongest protection method available in code protection arena today as it implements a one-way code transformation. The code is never translated back to its original form, instead the virtual machine emulates the original code behavior. Code virtualization can significantly degrade performance and make debugging very difficult.
+
+==Data Virtualization==
+The data stored in the class fields are vulnerable to analysis and unauthorized modification at runtime. The virtualization helps to minimize this vector of attack by changing the way the data are presented in memory and in assembly file. The original fields are replaced with special holders that store the values in encrypted form. The data are only decrypted when the value is used by the program code, after that it gets cleared from the memory.
+
+==Debug Symbols==
+Debug symbols, .pdb files for [[Microsoft Visual Studio|Visual Studio]], contain mappings from CIL elements and method body offsets to the original source code files. These symbol files are required to use a debugger on the assembly. The obfuscated assembly is a modified version of the original assembly and the original assembly's symbol files do not match the obfuscated one. The obfuscator software must therefore write the corresponding debug symbols for the obfuscated assembly. This file should not be deployed with the application (as it would defeat the purpose of obfuscation) but it can be used by the developer to analyse issues in the obfuscated assembly.
+
+==See also==
+*[[Obfuscation (software)|Obfuscation software]]
+*[[.NET]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://msdn.microsoft.com/library/dd551417.aspx Visual Studio Dotfuscator CE Documentation]
+
+[[Category:Lists of software|Obfuscators for .NET]]
+[[Category:Obfuscation]]

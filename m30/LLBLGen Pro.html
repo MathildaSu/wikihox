@@ -1,0 +1,96 @@
+ xml:space="preserve" bytes="4871"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=LLBLGen Pro|timestamp=20131125164133|year=2013|month=November|day=25|substed=yes|help=off}}
+<!-- For administrator use only: {{Old AfD multi|page=LLBLGen Pro|date=25 November 2013|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{Infobox Software
+| logo                   =
+| name                   = LLBLGen Pro
+| latest release version = 4.1
+| latest release date    = {{release date|2013|11|14}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Microsoft Windows]]
+| platform               = [[Microsoft .NET|.NET]] 3.5 or higher
+| programming language   = [[C Sharp (programming language)|C#]]
+| genre                  = [[Object-relational mapping]]
+| license                = Commercial
+| website                = http://www.llblgen.com/
+}}
+
+'''LLBLGen Pro''' is an [[O/R mapper]] and [[code generator]] for the [[Microsoft .NET]] platform, created by [http://www.sd.nl/ Solutions Design bv]. Computer programmers and software architects use this software to create a data-access tier and business objects tier in [[C Sharp (programming language)|C#]] or [[VB.NET]] for several O/R mapping frameworks, like [[NHibernate]], [[Entity Framework]], [[Language Integrated Query#LINQ to SQL (formerly called DLINQ)|LINQ to SQL]], and its own framework. Because LLBLGen Pro supports a lot of different databases to work with, software developers can choose the best framework and database per project.
+
+== History ==
+In 2003, the popular open source tool [[LLBLGen]] was succeeded by this commercial Pro version. Solutions Design bv continued to work on improvements and feature additions, like [[LINQ]] support and the ability to work both database-first and model-first.
+
+== Databases supported ==
+* MS Access 2000/XP/2003/2007/2010/2013
+* SQL Server 2000/2005/2008/2008R2/2012/Express/SQL Server CE Desktop
+* Oracle 9i/10g/11g/12c
+* PostgreSQL 7.4+/8.x/9.x
+* Firebird 1.5.x/2.x
+* IBM DB2 7.x/8.x/9.x/10.x (not on AS/400)
+* MySQL 4.x,5.x (using Core Lab's/DevArt MySQL .NET provider)
+* Sybase Adaptive Server Enterprise (ASE)
+* Sybase iAnywhere (ASA)
+
+== O/R mapper frameworks supported ==
+LLBLGen Pro supports the following O/R mapper frameworks<ref name="InfoQ">[http://www.infoq.com/news/2010/06/LLBLGen-Pro-3.0 InfoQ: LLBLGen Pro 3.0 Now Supports Multiple Persistence Frameworks]</ref>
+* LLBLGen Pro Runtime Framework 4.1
+* [[Entity Framework]] v1, v4, v5 and v6
+* LINQ to SQL
+* [[NHibernate]] 3.x (hbm.xml and FluentNHibernate)
+
+The system is extensible so any third-party O/R mapper framework can be used in the designer, to consume the abstract entity model plus the mappings to relational model data to generate C# / VB.NET classes and mapping files in the format of the targeted O/R mapper framework.
+
+== Feature summary ==
+LLBLGen Pro consists of two parts: a visual designer and the O/R mapper framework. 
+
+Key features of the visual designer:
+* [[Visual Studio]] integrated designer
+* Model first (entity model is leading) and database first (relational model/schema is leading) mapping / modelling
+* Grouping of project elements
+* Value types ([[Domain-driven design]])
+* Model views, to create visual views over (sub)graphs in the entity model
+* Text-DSL based quick model editor for quickly define an entity model by typing facts
+* Update/Create DDL SQL script generation
+* Built-in template editor
+* Table Valued Functions
+* Template based, task oriented code generation system
+* LINQ based project search
+* Map single entity model onto schemas from multiple database types (for example, Oracle and SQL Server) in a single project
+* Support for multiple O/R mapper frameworks.
+* Support for entity inheritance/entity splitting
+* Import system to build a model quickly by importing parts from external sources.
+
+Key features of the O/R mapper framework:
+* True database independent code
+* Full Async API
+* Full entity type inheritance
+* Custom developer code is preserved
+* LINQ support
+* Flexible concurrency mechanism
+* Derived table support
+* Table Valued Functions support
+* Query result cache support
+* Auditing support
+* Authorization support
+* [[Dependency injection]] mechanism
+* Fast and compact serialization
+* Optimal and fast pre-fetch paths (eager loading)
+* Hierarchical in-memory projections
+* Native Enum support
+* Transient error recovery.
+* Map Typed View on stored procedure resultset
+* WCF [[Rich Internet application]] (RIA) Services support
+* WCF Data Services support (OData)
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.llblgen.com/ www.llblgen.com]
+
+[[Category:Object-relational mapping]]
+[[Category:Computer programming tools]]
+[[Category:.NET programming tools]]
+[[Category:.NET object-relational mapping tools]]
