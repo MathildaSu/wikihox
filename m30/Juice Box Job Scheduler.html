@@ -1,0 +1,46 @@
+ xml:space="preserve" bytes="2438"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=Juice Box Job Scheduler|timestamp=20160113160008|year=2016|month=January|day=13|substed=yes|help=off}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=Juice Box Job Scheduler|date=13 January 2016|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{Infobox software
+| name                   = Juice Box Job Scheduler
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| collapsible            = 
+| developer              =
+| latest_release_version = 1.2.2
+| latest_release_date    = September 3, 2013
+| latest_preview_version = 
+| latest_preview_date    = 
+| operating_system       = [[Cross-platform]]
+| programming_language   = [[Java (programming language)|Java]]
+| genre                  = [[Workflow Automation]]
+| license                = [[Free software|Free]]
+| website                =
+}}
+'''Juice Box Job Scheduler''' is a cross-platform [[job scheduler]] with features such as:
+* Scheduling rules, ability to mix and match schedules with jobs.
+* Web based interface, no client installation necessary to access and configure the job scheduler.
+* Jobs can be composed of multiple steps.
+* Job status notifications.
+* Secured access.
+ 
+It is developed by Lingo and is released under a free license.
+
+== Job scheduling model ==
+The data model used in Juice Box has a many-to-many relationship between jobs and schedules. This is similar to products such as [[SQL Server Agent]] and offers similar benefits.<ref>{{cite web|url=http://technet.microsoft.com/en-us/library/ms189237.aspx#Benefits|title=Benefits of SQL Server Agent|publisher=Microsoft Corporation}}</ref> Furthermore, a job can consist of multiple execution steps which are performed in series, with the option of a failed step terminating the rest of the series.
+
+The job step types offered are Command Line and Data Source.The latter is a convenience for steps that need to execute database commands or operations. Both types can be used within a single job.
+
+The job scheduling model supports traditional job scheduling requirements and does not offer [[workload automation]] features.
+
+== Requirements ==
+Juice Box supports Windows, Linux/Unix and Mac and requires Java 1.6 or above.
+
+== References ==
+{{reflist}}
+
+
+
+[[Category:Job scheduling]]
