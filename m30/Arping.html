@@ -1,0 +1,48 @@
+ xml:space="preserve" bytes="3121"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=Arping|timestamp=20150706193503|year=2015|month=July|day=6|substed=yes|help=off}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=Arping|date=6 July 2015|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{unreferenced|date=May 2013}}
+{{lowercase|title=Arping}} 
+'''Arping''' is a computer software tool that is used to discover hosts on a [[computer network]]. The program tests whether a given [[IP address]] is in use on the local network, and can get additional information about the device using that address.
+
+The arping tool is analogous in function to [[Ping (networking utility)|ping]], which probes hosts using the [[Internet Control Message Protocol]] (ICMP). The difference is that while ICMP is a routable protocol that operates at [[Network Layer|layer 3]] of the [[OSI model]], arping operates at the [[Link Layer|layer 2]] (or the [[link layer]] of the OSI model) using the [[Address Resolution Protocol]] (ARP) for probing hosts. Since ARP is non-routable, this only works for the local network. However, in networks employing repeaters that use [[proxy ARP]], the ARP response may be coming from such proxy hosts and not from the probed target.
+
+There are two popular arping implementations. One is part of Linux iputils suite, and cannot resolve MAC addresses to IP addresses. The other arping implementation, written by Thomas Habets, can ping hosts by MAC address as well as by IP address, and adds more features.
+
+Having both arping implementations on a system may introduce conflicts. [[Ubuntu (operating system)|Ubuntu]], for example, handles this by removing iputils arping if Habets's arping is installed ([[NetworkManager]] will also be removed, because it requires the iputils arping).
+
+==Example==
+Example session output of arping from iputils:
+<pre>
+ARPING 192.168.39.120 from 192.168.39.1 eth0
+Unicast reply from 192.168.39.120 [00:01:80:38:F7:4C]  0.810ms
+Unicast reply from 192.168.39.120 [00:01:80:38:F7:4C]  0.607ms
+Unicast reply from 192.168.39.120 [00:01:80:38:F7:4C]  0.602ms
+Unicast reply from 192.168.39.120 [00:01:80:38:F7:4C]  0.606ms
+Sent 4 probes (1 broadcast(s))
+Received 4 response(s)
+</pre>
+Example session output from Thomas Habets's arping:
+<pre>
+ARPING 192.168.16.96
+60 bytes from 00:04:5a:4b:b6:ec (192.168.16.96): index=0 time=292.000 usec
+60 bytes from 00:04:5a:4b:b6:ec (192.168.16.96): index=1 time=310.000 usec
+60 bytes from 00:04:5a:4b:b6:ec (192.168.16.96): index=2 time=256.000 usec
+^C
+--- 192.168.16.96 statistics ---
+3 packets transmitted, 3 packets received,   0% unanswered (0 extra)
+</pre>
+
+==See also==
+*[[ArpON]]
+*[[arpwatch]]
+
+==External links==
+*[http://www.habets.pp.se/synscan/programs.php?prog=arping Thomas Habets's arping]
+*[http://www.linuxfoundation.org/collaborate/workgroups/networking/iputils iputils suite (including arping)]
+
+[[Category:Internet Protocol based network software]]
+[[Category:Free network management software]]
+
+{{network-software-stub}}
