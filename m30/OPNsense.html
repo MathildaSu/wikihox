@@ -1,0 +1,314 @@
+ xml:space="preserve" bytes="26844"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=OPNsense|timestamp=20150807111218|year=2015|month=August|day=7|substed=yes}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=OPNsense|date=7 August 2015|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{Infobox OS
+| name       = OPNsense
+| logo       = [[File:OPNsense Logo transparent background small.png|280px]]
+| screenshot = [[File:OPNsense GUI Screenshot RRD Graphs - January 2015.png|280px]]
+| caption    = Screenshot of OPNsense 15-[[GUI]] ([[RRDtool|RRD]] Graphs)
+| developer  = Franco Fichtner, Ad Schellevis, Jos Schellevis — founded by ''[[Deciso]]'' & supported by the ''OPNsense Community''<ref name="OPNsense-About"/>
+| family     = [[FreeBSD]] (10.1)
+| source model = [[Open source]]
+| supported_platforms = [[x86]], [[AMD64]]
+| released   = 15.1 - ''legacy series''<br/><small>/&nbsp;{{Start date and age|2015|01|02|df=yes}}</small>
+| latest release version = 15.7.7 - ''production series''
+| latest release date    = <small>{{Start date and age|2015|08|05|df=yes}}</small>
+| latest preview version = 16.1 - ''development series''
+| latest preview date    = <small>{{Start date and age|2015|07|02|df=no}}</small>
+| frequently updated     = Yes
+| kernel type = [[Monolithic kernel]]
+| license = [[BSD licenses|2-clause BSD]]<ref>[http://opnsense.org/about/legal-notices/ OPNsense 2-clause BSD license]</ref>
+| working state = Current
+| website = {{URL|opnsense.org}}
+}}
+
+'''OPNsense''' is an [[open-source software]] [[Firewall (computing)|firewall]] distribution based on [[FreeBSD]]. It is typically used for [[Stateful firewall|stateful]] perimeter firewalls, security [[computer appliance|appliances]], [[intrusion detection system]]s, [[router (computing)|routers]], [[Cloud computing|cloud routers]], [[wireless access point]]s, [[DHCP]] and [[Domain Name System|DNS]] servers, [[VPN]] endpoints, and [[unified threat management]]-machines. The OPNsense project is a [[Fork (software development)|fork]] of [[pfSense]].
+
+The OPNsense distribution can be downloaded for free<ref name=SF-OPNsense>{{cite web|title=OPNsense is an open source, easy to use firewall and routing platform|url=http://sourceforge.net/projects/opnsense/|website=http://sourceforge.net|publisher=sourfeforge|accessdate=19 February 2015}}</ref> and installed on computer [[hard disk]]s, [[Solid-state drive|SSD]]s, [[flash memory|Compact Flash]] cards as well as on [[USB flash drive]]s or [[Live CD]]s. It runs on a number of [[embedded system]]s and generic low power<ref name=NetboardA10>{{cite web|title=Netboard A10|url=https://www.deciso.com/netboard-a10/#.VPMsvi5odQI|website=deciso.com|publisher=Deciso B.V.|accessdate=1 March 2015}}</ref><ref name=AMD-NewFirewalls>{{cite web|last1=Schellevis|first1=Jos|title=Under the Hood: AMD G-Series SOC Delivers the Horsepower for Next Generation Firewalls|url=http://community.amd.com/community/amd-blogs/amd-business/blog/2015/02/11/under-the-hood-amd-g-series-soc-delivers-the-horsepower-for-next-generation-firewalls|website=community.amd.com|publisher=Advanced Micro Devices, Inc.|accessdate=1 March 2015}}</ref> [[personal computer]]s.
+
+OPNsense can be configured and upgraded through a web-based interface. It is focused on code quality and easy development, implementing the [[Model–view–controller|MVC]] paradigm.<ref name=OPNsense-WhyFork/>
+
+The OPNsense [[FreeBSD Ports|ports]], [[source code]] and [[Build automation|build environment]] are freely accessible without licensing costs and without special clauses attached.<ref name=FreeBSDNews-OPNsense>{{cite web|last1=Cao|title=Deciso Launches OPNsense, a New Open Source Firewall Initiative|url=https://www.freebsdnews.com/2015/01/07/deciso-launches-opnsense-open-source-firewall-initiative/|website=freebsdnews.com|publisher=FreeBSD News - January 7, 2015|accessdate=2 March 2015}}</ref><ref name=GitHub-OPNsense>{{cite web|title=OPNsense|url=https://github.com/opnsense|website=github.com|publisher=GitHub, Inc.|accessdate=19 February 2015}}</ref><ref name=FF-Workflow>{{cite web|last1=Fichtner|first1=Franco|title=Development Workflow in OPNsense|url=http://lastsummer.de/development-workflow-in-opnsense/|website=http://lastsummer.de|accessdate=21 February 2015}}</ref>
+
+==Name==
+The name was derived from the [[suffix]] of its progenitor's name [[pfSense]]<ref>{{cite web|url=//blog.pfsense.org/?p=114|title=So what does pfSense stand for/mean, anyway?|first=Chris|last=Buechler|date=June 21, 2007|work=pfSense Digest}}</ref> and ''open'', and stands for: ''"Open (source) makes sense."''<ref name="OPNsense-About">{{cite web|url=http://opnsense.org/about/about-opnsense/|title=About OPNsense|date=January 2, 2015|work=OPNsense website}}</ref> The name was derived from the fact that it aims to keep the source base of a distribution like OPNsense open and free to developers, [[entrepreneur]]s and non-technical users as well.
+
+==History==
+The project started on 2 January 2015<ref>{{cite web|url=http://opnsense.org/opnsense-version-15-1-released//?p=97|title=OPNsense 15.1-RELEASED|first=|last=|date=January 2, 2015|work=OPNsense website}}</ref> as a fork of [[pfSense]], which started as a [[Fork (software development)|project fork]] from [[m0n0wall]] in 2004.<ref>{{cite web|url=//www.pfsense.org/index.php?option=com_content&task=view&id=68&Itemid=76|title=pfSense Open Source Firewall Distribution - History}}</ref> The project gives three reasons for forking:<ref name="OPNsense-About"/><ref name=OPNsense-WhyFork>{{cite web|title=OPNsense:So why did we fork?|url=https://wiki.opnsense.org/index.php/OPNsense:So_why_did_we_fork%3F|website=opnsense.org|publisher=OPNsense|accessdate=21 February 2015}}</ref>
+
+* '''Technical''' – focus on clean codebase that can be used by developers and is maintainable.
+* '''Community''' – build a thriving community that gives and shares.
+* '''License''' – a simple 2-clause BSD license for the sources and the tools to [[Build automation|build]] it.
+
+The OPNsense<ref name=reddit-OPNsense>{{cite web|title=End of the m0n0wall project. Team endorses OPNsense|url=http://www.reddit.com/r/opnsense|website=reddit.com|publisher=reddit inc.|accessdate=2 March 2015}}</ref> project has been supported by [[Deciso]], an [[Information and communications technology|ICT]] solution provider for network appliances and middleware software.<ref name="press_release"/><ref name=DBV>{{cite web|title=Who we are - As sponsor|url=http://www.deciso.com/company/#.VOYFWpE_kxA|website=opnsense.org|publisher=Deciso B.V.|accessdate=19 February 2015}}</ref> On February 15, 2015 the founder of the m0n0wall project officially announced the end of the project and recommended OPNsense, which "aims to continue the open source spirit of m0n0wall while updating the technology to be ready for the future."<ref name="EoL">[http://m0n0.ch/wall/end_announcement.php m0n0wall - End of Development announcement; m0n0.ch]</ref>
+
+Since May 8, 2015, the [[HardenedBSD]] project teamed up with OPNsense to offer HardenedBSD-backed versions of OPNSense.<ref name=HardBSD-Announce>{{cite news|last1=Webb|first1=Shawn|title=HardenedBSD Teams Up With OPNSense|url=https://hardenedbsd.org/article/shawn-webb/2015-05-08/hardenedbsd-teams-opnsense|accessdate=13 May 2015|publisher=The HardenedBSD Project|date=8 May 2015}}</ref> The free HardenedBSD project offers security enhancements such as [[Address space layout randomization|ASLR]], [[PaX#PAGEEXEC|PAGEEXEC]], [[NX bit|NOEXEC]], [[Position-independent code|Position Independent Executable]] (PIE), and hardening of [[memory protection]] and [[ptrace]]. According to OPNsense developers, OPNsense will benefit from these security enhancements and other hardened FreeBSD code. The first OPNsense images on top of HardenedBSD were released on June 10, 2015.<ref name=HardenedOPNsense10June2015>{{cite news|last1=Webb|first1=Shawn|title=First Experimental OPNSense Images With HardenedBSD|url=https://hardenedbsd.org/article/shawn-webb/2015-06-10/first-official-opnsense-images-hardenedbsd|accessdate=11 June 2015|publisher=The HardenedBSD Project.|date=June 10, 2015}}</ref>
+
+==Releases==
+<!-- Template:Version is for version and release history. Documentation and examples: http://en.wikipedia.org/wiki/Template:Version. -->
+{| class="wikitable" style="float:right; text-align:center; margin-left:1em; margin-right:0"
+|-
+! Version
+! [[Code name]]
+! Series type
+! [[Branching_(revision_control)|Branch]]
+! Release date
+|-
+| {{Version|o|15.1}} 
+| ''"Ascending [[Albatross#Morphology and flight|Albatross]]"''
+| [[Fork (software development)|project fork]]
+| LEGACY
+| January 2, 2015
+|-
+| {{Version|c|15.7}}
+| ''"Brave [[Badger#Relation with humans|Badger]]"''
+| production
+| STABLE
+| July 2, 2015
+|-
+| {{Version|p|16.1}}
+| ''"unnamed"''<br>''([[Bleeding edge technology|bleeding edge]])''
+| [[Software development|development]]<br>[[Software testing|testing]]
+| [[Trunk (software)|TRUNK]]
+| January, 2016
+|-
+| colspan="99" | <small>{{Version |l |show=011101}}</small>
+|}
+
+Each OPNsense release has a [[Software versioning|version number]] that consists of the year and month number of the release. The version number for the future release is provisional; in time of the scheduled release, the future version number (blue) becomes the version number of the latest stable release (green) accordingly. 
+
+OPNsense releases are also given [[alliteration|alliterative]] [[code name]]s, using an adjective and the name of an animal. The code names are in alphabetical order, allowing a quick determination of which release is newer.
+
+The releases are timed to be approximately bi-annual, resulting in a summer and a winter release per year.
+
+Upgrades between releases have to be done from one release to the next release in a gradual manner, simply by updating a production installation over the calendary release mark.
+
+Basic software support is based on FreeBSD-10.1, until 31 December 2016<ref name=10.1-EoL>{{cite web|title=FreeBSD Security Information - End of Life|url=https://www.freebsd.org/security/|publisher=The FreeBSD Project.|accessdate=14 August 2015}}</ref> 
+
+{{Clear}}
+
+==Version history==
+{{Collapse top|OPNsense Versions}}
+{| class="wikitable"
+|-
+! Version
+! Milestones
+|-
+| {{Version |o |15.1}}
+|
+* First official release of the [[Fork (software development)|project fork]].<ref name="press_release">{{cite web|url=http://www.deciso.com/january-2nd-deciso-launches-opnsense-a-new-open-source-firewall-initiative/|title=Press release - Deciso launches OPNsense, a new open source firewall initiative|first=|last=|date=January 2, 2015|work=Website Deciso B.V.}}</ref><ref>{{cite web|url=http://opnsense.org/opnsense-version-15-1-1-released/|title=OPNsense version 15.1.1 Released|first=|last=|date=January 12, 2015|work=OPNsense project website}}</ref><ref name=15.1DevelopmentMilestones>{{cite web|title=15.1 Development Milestones|url=https://forum.opnsense.org/index.php?topic=817.msg2397#msg2397|website=forum.opnsense.org|publisher=opnsense.org|accessdate=8 July 2015}}</ref>
+* PHP 5.6, Bootstrap GUI and Glyphicons conversion
+* FreeBSD 10.0 as the base system
+* Removed the quantum-entangled "admin" user, it was pointing to "root" causing inconsistencies
+* Introduced code style based on PSR1/PSR2 as well as repository-wide whitespace cleanups
+* 2 Clause BSD license approach with all code being available on GitHub
+* SHA-512 for password hashes (previously was MD5)
+* Packaged core.git to avoid clobbering the actual base system
+* Rewrote tools.git from scratch
+* Introduced ports.git and src.git
+* Brought used parts of ports.git in sync with FreeBSD ports
+* Live-mount mode of core.git for development
+* Thorough refactoring of the bsdinstaller, pushed into ports.git for easy access
+* Introduced Phalcon for upcoming MVC rewrite
+* Rewrote parts of the captive portal in MVC
+* Introduced pkgng as the core tool for firmware upgrades
+* Disabled the legacy packaging system
+|-
+| {{Version |c |15.7}}
+|
+* First stable production quality release.<ref name=15.7DevelopmentMilestones>{{cite web|title=15.7 Development Milestones|url=https://forum.opnsense.org/index.php?topic=837.0|website=forum.opnsense.org|publisher=opnsense.org|accessdate=8 July 2015}}</ref><ref name=roadmap>{{cite web|title=Roadmap|url=https://opnsense.org/about/road-map/|website=opnsense.org|publisher=OPNsense|accessdate=22 February 2015}}</ref><ref name=15.7Milestone>{{cite web|last1=Fichtner|first1=Franco|title=15.7 Development Milestones|url=https://forum.opnsense.org/index.php?topic=837.0|website=forum.opnsense.org|publisher=The OPNsense Project|accessdate=2 July 2015}}</ref>
+* Added i386 and [[NanoBSD]] images
+* Stripped the legacy code for platform awareness and NanoBSD images
+* OpenSSL and [[LibreSSL]] production-ready flavours
+* Introduced opnsense-update utility for base system, kernel and package updates
+* Completely rewrote of the firmware backend code and rebuilt its GUI in [[Model–view–controller|MVC]]
+* Moved from FreeBSD 10.0 to 10.1, managing to lose the majority of custom patches
+* Replaced the legacy backend daemon with a [[Python (programming language)|Python]] rewrite including a template engine
+* Bsdinstaller can adapt its installation parameters for embedded devices
+* Added [[OpenDNS]] support in the GUI (impeccable timing on that one)
+* Brought back the crash reporter
+* Added [[GoogleDrive]] backup option for the configuration history
+* Rewrote server-side parts of the [[XML-RPC|RPCXML]] service
+* Unused ports in ports.git are now kept fully in sync with [[FreeBSD ports]]
+* Kickstart of user-contributed translation projects with e.g. Simplified Chinese at 49% completed and German at 30%
+* Config.xml handling code was refactored to enable simultaneous operation of the legacy PHP pages and the new MVC features
+* Removed the unmaintained and dysfunctional [[Layer 7]] filtering code
+* Traffic shaper feature was rewritten using [[IPFW]]/MVC instead of [[ALTQ]]
+* Upgrade package are now signed and verified for authenticity
+* The [[GUI]] menu has been converted to MVC and enables legacy and new GUI components to coexist peacefully
+* The bulk of custom [[kernel patch]]es has been stripped to minimise the code distance to FreeBSD
+* [[Proxy server]] implementation in MVC using [[squid]]
+* [[Intrusion detection system]] (IDS) implementation in MVC using [[Suricata (software)|Suricata]]
+* [[Cron]] implementation in MVC
+* [[HTTP]] [[API]] support for firmware updates, proxy server, intrusion detection and traffic shaper
+* Reworked the port assignment section also support non-interactive setups for headless systems
+|-
+| {{Version |p |16.1}}
+|
+<u>Note :</u>&nbsp; Under current development, see the [https://opnsense.org/about/road-map/ OPNsense roadmap],<ref name=roadmap/> and [https://forum.opnsense.org/index.php?topic=917.0 how to test the OPNsense development version].
+* additional languages (translations [.po])
+*[[Plug-in (computing)|plugin]] support (in addition to base firewall)
+**[[Access control list|ACL]] replacement
+**extensible and reducible [[GUI]] menu system
+**plugin build framework and repository
+*[[API]] session handling to make use of the already build ([[Representational state transfer|RESTful]]) services
+*privilege separation by integrating backend commands into configd [[System call|calls]]
+*quick navigation feature
+*add [[unit testing]] and initial component tests
+*rewrite of [[captive portal]] application (using new software infrastructure)
+*[[OSI model#Layer 7: Application Layer|network layer 7]] [[deep packet inspection]] (DPI) [[Plug-in (computing)|plugin]]
+|-
+!
+! Security updates & significant changes
+|-
+|
+|For security updates, bug-fixes, improvements and new software plugins, see the [https://forum.opnsense.org/index.php?PHPSESSID=6qqi6a93cbpjpm1ap04sm1f555&board=11.0 OPNsense Announcements].
+|-
+| colspan="99" | <small>{{Version |l |show=011101}}</small>
+|}
+{{collapse bottom}}
+
+==License and Trademark==
+{{Details|FreeBSD#License|the OPNsense licensing rules}}
+OPNsense is committed to [[Open Source Initiative|open source]]<ref name=OSI-Announcement /> community [[peer review]] and classical free & open access to its [[source code]] and [[Build automation|build environment]].<ref name=OPNsense-WhyFork/><ref name=InternetNeutrality>{{cite web|last1=Poure|first1=Jean-Michel|title=pfSense Internet neutrality and FreeBSD licence|url=https://forum.pfsense.org/index.php?topic=77038.0|website=forum.pfsense.org|publisher=Electric Sheep Fencing LLC  - May 15, 2014|accessdate=1 March 2015}}</ref>
+
+OPNsense is released under the two-clause [[BSD license]] which allows everyone to use and redistribute it as they wish. This license was approved by [[Free Software Foundation]]<ref name="fsf-license">{{cite web
+|title       = Various Licenses and Comments about Them
+|url         = https://www.gnu.org/licenses/license-list.html#FreeBSD
+|publisher   = [[The GNU Project]]
+|accessdate  = 9 August 2014
+}}</ref> and [[Open Source Initiative]]<ref name="osi-license">{{cite web
+|title       = The BSD 2-Clause License
+|url         = http://opensource.org/licenses/bsd-license.php
+|publisher   = [[Open Source Initiative]]
+|accessdate  = 9 August 2014
+}}</ref> as a Free Software and Open Source license respectively.
+
+OPNsense follows the BSD-license strategy of [[FreeBSD]].
+
+Since April 8, 2014 "OPNsense" is a trademark of [[Deciso]].<ref name=TrademarkOPNsense>{{cite web|title=OPNsense - Trademark, owner Deciso Group B.V.|url=http://tm.kurzy.cz/deciso-group-bv/opnsense-pz12771457o.htm|website=tm.kurzy.cz|publisher=Kurzy.cz, spol. s r.o., AliaWeb, spol. s r.o|accessdate=1 March 2015}}</ref>
+
+==Architectures==
+As of 2015, OPNsense supports only one [[processor architecture]]. The OPNsense project fully supports the mature Tier 1 architectures. Support for other architectures is provisional, and only planned for future releases. 
+
+{| class="wikitable"
+|-
+! Architecture
+! Support Level
+! Notes
+|-
+| [[IA-32|x86 (IA-32)]]
+| Tier 1
+| referred to as "i386", full support
+|-
+| [[x86-64]]
+| Tier 1
+| referred to as "amd64", full support
+|-
+| [[ARM architecture|ARM]]
+| provisional<ref name=roadmap />
+| support is planned for future releases, 16.7 and on
+|-
+| [[MIPS architecture|MIPS]]
+| provisional<ref name=roadmap />
+| support is planned for future releases, 16.7 and on
+|}
+
+The ARM and MIPS architectures mostly aim at embedded systems, however OPNsense/i386 and OPNsense/amd64 run on a number of [[single-board computers]], [[embedded system]]s, and generic low power<ref name=NetboardA10 /><ref name=AMD-NewFirewalls /> [[personal computer]] hardwares.<ref name=PC-Engines-APU>{{cite web|title=Applianceshop - PC Engines|url=https://www.applianceshop.eu/parts/pcengines.html|publisher=Deciso Sales B.V|accessdate=14 August 2015}}</ref><ref name=Embedded-Request-for-Testing>{{cite web|title=Request for Testing: Nano/Embedded/SD card images|url=https://forum.opnsense.org/index.php?topic=342.0|publisher=The OPNsense Project.|accessdate=14 August 2015}}</ref>
+
+== Features ==
+{| class=wikitable style="font-size:90%" 
+|-
+| {{Version |c |Install & firmware update}} ||
+* [[Live CD]], USB installers available
+* Easy upgrade by web-based click-to-upgrade
+* Command-line interface opnsense-update tool (since 15.1.6.1)
+* Console, web-based modern Bootstrap based [[GUI]], [[Secure Shell|SSH]] and serial console management
+* [[RRDtool|RRD]] graphs reporting
+* Traffic shaping and filtering
+* Real-time information using [[Ajax (programming)|Ajax]]
+|-
+| {{Version |c |Functionality and connectivity}} ||
+* [[Virtual Private Network]]s using [[IPsec]], [[L2TP]], [[OpenVPN]], or [[PPTP]]
+* [[Point-to-Point Protocol over Ethernet|PPPoE]] server
+* High availability clustering; redundancy and failover including [[Common Address Redundancy Protocol|CARP]] and [[pfsync]]
+* Outbound and inbound [[Load balancing (computing)|load balancing]]
+* [[Quality of Service]] (QoS)
+* [[Dynamic DNS]]
+* [[Captive portal]]
+* [[uPnP]]
+* Multi-WAN
+* VLAN ([[802.1q]])
+* [[Dynamic Host Configuration Protocol|DHCP]] server and relay
+* [[IPv6]] support
+* Multiple public IP addresses/multi-NAT
+* [[RADIUS]]/[[LDAP]]
+* Multiple resolvers (DNS forwarder, [[Unbound (DNS Server)|Unbound]])
+* Aliases supported for rules, IP addresses, ports, computers, and other entities
+* [[Squid (software)|Squid]] caching and forwarding web-proxy<ref name=squid>As of OPNsense version 15.1.10.2. Full featured implementation of the Squid forwarding and caching web proxy (ftp/html/dns).</ref>
+* [[Intrusion detection system]] (IDS) implementation in MVC using [[Suricata (software)|Suricata]]
+|-
+| {{Version |c |Firewall and routing}} || 
+* Stateful [[Firewall (computing)|firewall]]
+* [[Network Address Translation]]
+* Filtering by source/destination IP address, protocol, OS/network fingerprinting
+* Layer 7 protocol inspection or [[Deep packet inspection|Deep Packet Inspection]]
+* Flexible routing 
+* Per-rule configurable logging and per-rule limiters (IP addresses, connections, states, new connections, state types), policy filtering (or packet marking), TCP flag state filtering, scheduling, gateway
+* Packet scrubbing
+* Layer 2/bridging capable
+* State table "up to several hundred thousand" states (1&nbsp;KB RAM per state approx)
+* State table algorithms customizable including low latency and low-dropout
+|}
+
+==See also==
+{{Portal|Free software}}
+* [[Comparison of firewalls]]
+* [[List of router or firewall distributions]]
+;''BSD based:''
+* [[BSD Router Project]]
+* [[m0n0wall]] (discontinued)
+* [[pfSense]]
+* [[NAS4Free]]
+* [[FreeNAS]]
+;''Linux based:''
+* [[SmoothWall]]
+* [[IPCop]]
+* [[IPFire]]
+
+==External links==
+* {{Official website|opnsense.org}}
+* [http://www.theregister.co.uk/2015/02/16/m0n0wall_coming_down/ The Register - m0n0wall comes tumbling down - OPNsense mentioned as successor] <ref name="M0n0wall comes tumbling down">{{cite web|title=M0n0wall comes tumbling down|url=http://www.theregister.co.uk/2015/02/16/m0n0wall_coming_down/|website=www.theregister.co.uk|accessdate=10 August 2015}}</ref>
+* [https://www.freebsdnews.com/category/freebsd-based-operating-systems/pfsense/opnsense/ OPNsense page on FreeBSD News] <ref name="OPNsense page on FreeBSD News">{{cite web|title=OPNsense page on FreeBSD News|url=https://www.freebsdnews.com/category/freebsd-based-operating-systems/pfsense/opnsense/|website=www.freebsdnews.com|publisher=freeBSD News|accessdate=10 August 2015}}</ref>
+* [http://www.mondaiji.com/blog/other/it/10175-the-hunt-for-the-ultimate-free-open-source-firewall-distro The Hunt For the Ultimate Free Open Source Firewall Distro] <ref name="The Hunt For the Ultimate Free Open Source Firewall Distro">{{cite web|title=The Hunt For the Ultimate Free Open Source Firewall Distro|url=http://www.mondaiji.com/blog/other/it/10175-the-hunt-for-the-ultimate-free-open-source-firewall-distro|website=www.mondaiji.com|publisher=Mondaiji (David Pavlina)|accessdate=10 August 2015}}</ref>
+* [http://www.bsdnow.tv/episodes/2015_01_14-common_sense_approach BSD Now - Episode 072: Common *Sense Approach] <ref name="BSD Now - Episode 072">{{cite web|title=BSD Now - Episode 072: Common *Sense Approach|url=http://www.bsdnow.tv/episodes/2015_01_14-common_sense_approach|website=www.bsdnow.tv|publisher=BSD Now|accessdate=10 August 2015}}</ref>
+* [https://hardenedbsd.org/article/shawn-webb/2015-05-08/hardenedbsd-teams-opnsense HardenedBSD Teams Up With OPNSense] <ref name="HardenedBSD Teams Up With OPNSense">{{cite web|title=HardenedBSD Teams Up With OPNSense|url=https://hardenedbsd.org/article/shawn-webb/2015-05-08/hardenedbsd-teams-opnsense|website=hardenedbsd.org|publisher=HardenedBSD|accessdate=10 August 2015}}</ref>
+* [http://opensource.org/node/746 OSI Welcomes New Sponsor Deciso] <ref name=OSI-Announcement>{{cite web|last1=masson|title=OSI Welcomes New Sponsor Deciso|url=http://opensource.org/node/746|website=http://opensource.org|publisher=Open Source Initiative (OSI)|accessdate=14 August 2015}}</ref><ref name=DecisoOSI>{{cite web|title=OSI Welcomes New Sponsor Deciso|url=https://www.deciso.com/2015-april-28th-deciso-extends-support-to-broader-open-source-community/|website=deciso.com|publisher=Deciso B.V. ; April 28, 2015|accessdate=8 July 2015}}</ref> - The [[Open Source Initiative]], April 2015
+
+=== Articles about OPNsense ===
+
+* [http://www.scip.ch/en/?labs.20150409 Labs: Securing Your Home Fences] <ref name="Labs: Securing Your Home Fences">{{cite web|title=Labs: Securing Your Home Fences|url=http://www.scip.ch/en/?labs.20150409|website=www.scip.ch|publisher=Andrea Covello|accessdate=10 August 2015}}</ref>
+* [https://cloud.moov.de/blog/tag/opnsense/ You should try OPNsense, a pfSense fork] <ref name="You should try OPNsense, a pfSense fork">{{cite web|title=You should try OPNsense, a pfSense fork|url=https://cloud.moov.de/blog/tag/opnsense/|website=cloud.moov.de|publisher=Frank Wall|accessdate=10 August 2015}}</ref>
+* [https://kram3r.wordpress.com/2015/07/09/opnsense-on-digitalocean-droplet/ OPNSense on DigitalOcean droplet] <ref name="OPNSense on DigitalOcean droplet">{{cite web|title=OPNSense on DigitalOcean droplet|url=https://kram3r.wordpress.com/2015/07/09/opnsense-on-digitalocean-droplet/|website=kram3r.wordpress.com|publisher=Kram3r|accessdate=10 August 2015}}</ref>
+* [http://linoxide.com/firewall/install-opnsense-virtualbox/ How to Install OPNsense Firewall on VirtualBox] <ref name="How to Install OPNsense Firewall on VirtualBox">{{cite web|title=How to Install OPNsense Firewall on VirtualBox|url=http://linoxide.com/firewall/install-opnsense-virtualbox/|website=linoxide.com|publisher=Ivan Zabrovskiy|accessdate=10 August 2015}}</ref>
+* [http://ramirosalas.com/installing-dnscrypt-in-opnsense.html Installing DNSCrypt in OPNsense] <ref name="Installing DNSCrypt in OPNsense">{{cite web|title=Installing DNSCrypt in OPNsense|url=http://ramirosalas.com/installing-dnscrypt-in-opnsense.html|website=ramirosalas.com|publisher=Ramiro Salas|accessdate=10 August 2015}}</ref>
+* [https://www.kirkg.us/posts/using-opendns-with-opnsense/ Using OpenDNS with OPNSense] <ref name="Using OpenDNS with OPNSense">{{cite web|title=Using OpenDNS with OPNSense|url=https://www.kirkg.us/posts/using-opendns-with-opnsense/|website=www.kirkg.us|publisher=Kirk Gleason|accessdate=10 August 2015}}</ref>
+
+==References==
+{{Reflist|30em}}
+
+{{FreeBSD}}
+{{Routing software}}
+{{Firewall software}}
+
+{{DEFAULTSORT:OPNsense}}
+[[Category:BSD software]]
+[[Category:FreeBSD]]
+[[Category:Firewall software]]
+[[Category:Free routing software]]
+[[Category:Gateway/routing/firewall distribution]]
+[[Category:Computer network security]]
+[[Category:Routers (computing)]]
+[[Category:Wireless access points]]
+[[Category:Free security software]]
