@@ -1,0 +1,49 @@
+ xml:space="preserve" bytes="5864"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=Illegal prime|timestamp=20151207003842|year=2015|month=December|day=7|substed=yes}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=Illegal prime|date=7 December 2015|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+An '''illegal prime''' is a [[prime number]] that represents information whose possession or distribution is forbidden in some [[legal jurisdiction]]. One of the first illegal primes was found in 2001. When interpreted in a particular way, it describes a [[computer program]] that bypasses the [[digital rights management]] scheme used on [[DVD]]s.  Distribution of such a program in the [[United States]] is illegal under the [[Digital Millennium Copyright Act]].<ref name=gloss>{{cite web|url=http://primes.utm.edu/glossary/page.php?sort=Illegal |title=Prime glossary - Illegal prime |publisher=Primes.utm.edu |date=1999-10-06 |accessdate=2013-03-26}}</ref> An illegal prime is a kind of [[illegal number]].
+
+==Background==
+[[Image:DeCSS.PNG|right|250px|thumbnail|The [[DeCSS]] code can be used by a computer to circumvent a DVD's [[copy protection]].]]
+
+One of the earliest illegal prime numbers was generated in March 2001 by [[Phil Carmody]]. Its [[binary numeral system|binary]] representation corresponds to a [[data compression|compressed]] version of the [[C (programming language)|C]] [[source code]] of a [[computer program]] implementing the [[DeCSS]] decryption algorithm, which can be used by a computer to circumvent a DVD's [[copy protection]].<ref name=gloss/><ref>{{cite web|url=http://primes.utm.edu/curios/page.php?number_id=1214 |title=Prime Curios – first known non-trivial executable prime |publisher=Primes.utm.edu |date=2001-09-10 |accessdate=2013-03-26}}</ref>
+
+Protests against the indictment of DeCSS author [[Jon Lech Johansen]] and legislation prohibiting publication of DeCSS code took many forms.<ref>Hamilton, David P. [http://www.cs.cmu.edu/~dst/DeCSS/Gallery/wsj-04-12-2001.html "Banned Code Lives in Poetry and Song"]</ref> One of them was the representation of the illegal code in a form that had an ''intrinsically archivable'' quality. Since the bits making up a computer program also represent a number, the plan was for the number to have some special property that would make it archivable and publishable (one method was to print it on a T-shirt). The [[primality]] of a number is a fundamental property of [[number theory]] and is therefore not dependent on legal definitions of any particular jurisdiction.
+
+The large prime database of The [[Prime Pages]] website records the top 20 primes of various special forms; one of them is proof of primality using the [[elliptic curve primality proving]] (ECPP) [[algorithm]]. Thus, if the number were large enough and proved prime using ECPP, it would be published.
+
+==Discovery==
+Specifically, Carmody applied [[Dirichlet's theorem on arithmetic progressions|Dirichlet's theorem]] to several prime candidates of the form 
+''k·256<sup>n</sup> + b'',  where ''k'' was the [[decimal]] representation of the original compressed file. Multiplying by a power of 256 adds as many trailing [[null character]]s to the [[gzip]] file as indicated in the [[exponentiation|exponent]] which would still result in the DeCSS C code when unzipped.
+
+Of those prime candidates, several were identified as [[probable prime]] using the [[open source]] program OpenPFGW, and one of them was proved prime using the ECPP algorithm implemented by the Titanix software.<ref>[http://www.theregister.co.uk/2001/03/19/dvd_descrambler_encoded_in_illegal/ DVD descrambler encoded in ‘illegal’ prime number] (Thomas C. Greene, ''The Register'', Mon 19 March 2001)</ref><ref>{{cite web|url=http://primes.utm.edu/curios/page.php?number_id=953 |title=Prime Curios - first illegal prime |publisher=Primes.utm.edu |date= |accessdate=2013-03-26}}</ref> Even at the time of discovery in 2001, this 1401-digit number, of the form ''k·256<sup>2</sup> + 2083'', was too small to be mentioned, so Carmody created a 1905-digit prime, of the form ''k·256<sup>211</sup> + 99'', that was the tenth largest prime found using ECPP, a remarkable achievement by itself and worthy of being published on the lists of the highest prime numbers.<ref name=gloss/> In a way, by having this number independently published for a completely unrelated reason to the DeCSS code, he had been able to evade legal responsibility for the original software.
+
+Following this, Carmody also discovered another prime, this one being directly [[executable]] machine language for [[Linux]] [[Intel 80386|i386]], implementing the same functionality.
+
+==See also==
+*[[AACS encryption key controversy]]
+*[[HDCP#Master key release|HDCP master key release]]
+*[[Illegal number]]
+*[[The Library of Babel]]
+*[[Normal number]]
+*[[PlayStation_3_homebrew#Private key compromised|PlayStation 3 private key compromised]]
+*[[Prior art]]
+*[[Streisand effect]]
+*[[Texas Instruments signing key controversy]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://web.archive.org/web/20011212144451/fatphil.org/maths/illegal1.html The first illegal prime]<!-- this is a link to the Wayback Machine b/c the page has for some been replaced by a war protest; this protest text is per-IP address, in an attempt to target people from countries who supported the Iraq war; so if you don't get a warning there, that doesn't mean the protest is gone. -->
+* [http://fatphil.org/maths/illegal2.html Phil Carmody's page discussing executable primes.]
+
+{{Prime number classes}}
+{{Use dmy dates|date=September 2010}}
+
+{{DEFAULTSORT:Illegal Prime}}
+[[Category:Computer law]]
+[[Category:Crypto-anarchism]]
+[[Category:Cryptography law]]
+[[Category:Prime numbers]]
