@@ -1,0 +1,56 @@
+ xml:space="preserve" bytes="3492"><!-- Please do not remove or change this AfD message until the discussion has been closed. -->
+{{Article for deletion/dated|page=PyMC3|timestamp=20170222195126|year=2017|month=February|day=22|substed=yes|help=off}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=PyMC3|date=22 February 2017|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+{{Infobox software
+| PyMC3
+| name                   = PyMC3
+| author                 = PyMC3 Development Team
+| released               = {{Start date|2013|5|04}}
+| discontinued           =
+| latest release version = 3.0
+| latest release date    = {{Start date|2017|01|09}}
+| programming language   = [[Python_(programming_language) | Python]]
+| operating system       = [[Unix-like]], [[Mac OS X]], [[Microsoft Windows]]
+| platform               = [[IA-32|Intel x86 – 32-bit]], [[x86-64|x64]]
+| status                 = Active
+| genre                  = [[Statistical package]]
+| license                = [[Apache_License| Apache License, Version 2.0]]
+| website                = {{URL|http://pymc-devs.github.io/pymc3/}}
+}}
+
+'''PyMC3'''<ref>Salvatier J, Wiecki TV, Fonnesbeck C. (2016) Probabilistic programming in Python using PyMC3. PeerJ Computer Science 2:e55 https://doi.org/10.7717/peerj-cs.55</ref> is a [[Python_(programming_language) | Python]] package for Bayesian statistical modeling and probabilistic machine learning which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. PyMC3 relies on [[Theano (software) | Theano]] for automatic differentiation and also for computation optimization and dynamic C compilation. 
+PyMC3 is an [[ Open-source_software | open source]] project, developed by the community and fiscally sponsored by [http://www.numfocus.org/open-source-projects.html NumFocus].
+
+== Inference engines ==
+PyMC3 implements non-gradient-based and gradient-based [[Markov chain Monte Carlo]] (MCMC) algorithms for Bayesian inference and stochastic, gradient-based [[variational Bayesian methods]] for approximate Bayesian inference.
+* MCMC algorithms:
+** No-U-Turn sampler<ref name="NUTS2014">{{cite journal
+ | last1 = Hoffman | first1 = Matthew D.
+ | last2 = Gelman |first2 = Andrew
+ | title = The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo
+ | journal = [[Journal of Machine Learning Research]]
+ |date=April 2014
+ | volume = 15
+ | pages = ''pp.'' 1593&ndash;1623
+ | url = http://jmlr.org/papers/v15/hoffman14a.html
+}}</ref> (NUTS), a variant of [[Hybrid_Monte_Carlo| Hamiltonian Monte Carlo]] and PyMC3's default engine for continuous variables
+** Metropolis–Hastings, PyMC3's default engine for discrete variables
+* Variational inference algorithms:
+** Black-box Variational Inference<ref name="kucukelbir20153">{{cite journal
+ |last1 = Kucukelbir|first1 = Alp|last2 = Ranganath|first2 = Rajesh|last3 = Blei|first3 = David M.|title = Automatic Variational Inference in Stan|date = June 2015|volume = 1506.03431|arxiv = 1506.03431}}</ref>
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* [http://pymc-devs.github.io/pymc3/ PyMC3 web site]
+* [https://github.com/pymc-devs/pymc3 PyMC3 source], a [[Git (software)|Git]] repository hosted on [[GitHub]]
+
+{{Statistical software}}
+
+[[Category:Computational statistics]]
+[[Category:Free Bayesian statistics software]]
+[[Category:Monte Carlo software]]
+[[Category:Numerical programming languages]]
+[[Category:Probabilistic software]]
