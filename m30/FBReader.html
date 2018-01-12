@@ -1,0 +1,170 @@
+ xml:space="preserve" bytes="11448"><!-- Please do not remove or change this AfD message until the issue is settled -->
+{{Article for deletion/dated|page=FBReader|timestamp=20150703090453|year=2015|month=July|day=3|substed=yes|help=off}}
+<!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=FBReader|date=3 July 2015|result='''keep'''}} -->
+<!-- End of AfD message, feel free to edit beyond this point -->
+<!-- attempt to copyright wikipedia {{csb-pageincludes|1=http://www.wikipediatldr.com/wiki/FBReader}} -->
+
+{{Infobox software
+| logo                   =
+| screenshot             = [[Image:Fbreader os2008.jpg|125px]]
+| caption                = FBReader on [[Maemo (operating system)|Maemo]]
+| latest_preview_version = 2.0 beta 14
+| latest_preview_date = {{Start date and age|2013|11|23}}
+| latest_release_version = 1.10.0.5
+| latest_release_date = {{Start date and age|2014|04|21}}
+| programming language   = [[C++]], [[Java (programming language)|Java]]
+| operating system       = [[Cross-platform]]
+| language               = [[Multilingual]]
+| genre                  = [[e-book]] reader
+| license                = [[GNU General Public License|GPL]] ([[free software]])
+| website                = {{URL|fbreader.org}}
+}}
+'''FBReader''' is a [[free software|free]] and [[open source]] [[e-book reader]] for [[Linux]], [[Microsoft Windows]], and other platforms.
+
+It was originally written for the [[Sharp Zaurus]] and currently runs on many other [[mobile device]]s, like the [[Nokia Internet Tablet]]s, as well as [[desktop computer]]s. A preview of FBReaderJ (the [[Java (programming language)|Java]] port) for Google [[Android (operating system)|Android]] was released on April 13, 2008.
+
+Supported formats include [[EPUB]], [[FictionBook]], [[HTML]], [[plucker]], [[PalmDoc]], [[zTxt]], [[Text Compression for Reader|TCR]], [[Microsoft Compiled HTML Help|CHM]], [[Rich Text Format|RTF]], [[Open eBook|OEB]], [[mobipocket]] (mobi) without [[digital rights management|DRM]], and plain-text.<ref>[http://fbreader.org/about.php FBReader: About FBReader]</ref>
+[[File:FBReaderWindow.png|thumb|A desktop version of FBreader]] DAISY 3 format support was added to a fork of FBReaderJ for Android distributed by [[Benetech]] as Go Read for [[Bookshare]] on [[Google Play]].
+
+== History ==
+FBReader was originally released for the [[Sharp Zaurus]] in January 2005, a [[Maemo]] port was added in December 2005 for the [[Nokia 770]]. FBReader has since had binary packages released for many mobile device platforms and most major [[personal computer]] (PC) [[operating system]]s.<ref>[http://fbreader.org/obsolete/ FBReader: obsolete versions]</ref>
+The FBReader name with the [[FB]] prefix comes from FictionBook, an e-book format which is popular in [[Russia]], the country of FBReader's author.<ref>[http://talk.maemo.org/archive/index.php/t-555.html FBReader and its .fb2 format], maemo.org forum, 2005</ref>
+
+The original FBReader was writting in C++, however in 2007<ref>{{Cite web|title = geometer/FBReaderJ|url = https://github.com/geometer/FBReaderJ/tree/23c429502a1ae00bde925b8fc9e17bde2a3ba5cf|website = GitHub|accessdate = 2015-07-03}}</ref> a fork called FBReaderJ was created, which was written in Java. As the Android platform became available in the following years, this fork became the codebase for the android app, which the C++ codebase remained in use for the other platforms.<ref>{{Cite web|title = geometer/FBReader|url = https://github.com/geometer/FBReader|website = GitHub|accessdate = 2015-07-03}}</ref>
+
+== Components ==
+For easy [[cross-platform]] compiling, FBReader uses zlibrary, a cross-platform interface library. It allows recompiling for many platforms while disregarding the [[widget toolkit|GUI-toolkit]] used.
+
+==Features==
+* support Multiple book [[tar]], [[zip (file format)|ZIP]], [[GZIP]] and [[BZIP2]] archives.<ref>http://wiki.mobileread.com/wiki/FBReader</ref>
+* encoding detection
+* generates contents table.
+* Embedded images
+* hyperlinks
+* Position indicator (substitutes for page number).
+* library building
+* Most Recent Book
+* last read positions for all previously opened books
+* List of last opened books.
+* Automatic hyphenations
+* Text search.
+* Full-screen mode.
+* Screen rotation by 90, 180 and 270 degrees.
+* Text-to-speech
+**To activate text to speech on the [[Android (operating system)|Android]] platform, install a TTS plugin, such as ''TTS+ plugin from Hyperionics''.<ref>[http://hyperionics.com/TtsPlus/ ''TTS+ Plugin'' - enhanced Text-To-Speech plugin for ''FBReader for Android'']</ref>
+
+== File format support ==
+FBReader supports the following file formats:<ref>[https://fbreader.org/content/book-formats-supported-and-not-supported E-book formats, supported and not supported | Free eBook Reader - Free!]</ref>
+* [[EPUB]] : all the main features except the tables. CSS support is not full.
+* [[EPUB|EPUB3]] : does not support most of ePub 3 specific features
+* [[Mobipocket]] : opens non-encrypted *.mobi files. DRM-protected files are not supported.
+* [[FictionBook|FB 2.0]] : fully supported
+* [[FictionBook|FB 2.1]] : lacks support of tables
+* [[HTML]] : limited, sufficient support
+* Plain text : supported, might not correctly split text into paragraphs.
+* [[Rich Text Format|RTF]] : subset of RTF
+* [[Doc (computing)|DOC]] ([[Microsoft Word]]) : subset of DOC
+* [[Portable Document Format|PDF]] :
+**Android: via separate plugin with third-party library
+**Other platforms: not supported
+* [[DjVu]] :
+**Android: via separate plugin
+**Other platforms: not supported
+* [[Plucker]] :
+**Android: not supported at this moment
+**Other platforms: “absolute positioning” commands may be interpreted or ignored
+
+== Multi-Platform Support==
+* [[Microsoft Windows]]
+* [[BlackBerry 10]]
+* [[Mac OS X]]
+* [[FreeBSD]]
+* [[Linux]]
+* mobile [[Linux]] devices:<ref>http://wiki.mobileread.com/wiki/FBReader</ref>
+** Sharp Zaurus with Qtopia-based ROMs, pdaXrom or OpenZaurus ROM.
+** Archos PMA430.
+** Siemens Simpad with Opensimpad 0.9.0/Opie ROM.
+** Nokia [http://europe.nokia.com/770 770]/[http://europe.nokia.com/N800 N800]/[http://europe.nokia.com/N810 N810] [[Nokia Internet tablet]]s ([http://maemo.org maemo]).
+** [[Pepper Pad]] 3.
+** Motorola E680i/A780 smartphones.
+** [[iLiad]]
+** [[Digital Reader 1000]] and [[Digital Reader DR800SG]]
+** [[Hanlin eReader]]
+** ''Openinkpot'' - OS replacement for [[Hanlin eReader]] and ''Hanvon N516''
+** [[PocketBook International|Pocketbook]] - [[E Ink]] [[e-book reader]]s
+** [[SmartQ 5]] and ''SmartQ 7''
+
+==Nikolay Pultsin==
+:* [http://www.geometerplus.com/ Geometer Plus LLC] is developer of [https://fbreader.org FBReader(.org)]
+:*[https://fbreader.org/content/about-us 2005 FBReader by Nikolay Pultsin.<br> 2007 July Nikolay founded Geometer Plus LLC., St.Petersburg, Russia.<br> 2013 June FBReader.ORG LTD, England and Wales Company No 08579768.]
+:*[http://wck2.companieshouse.gov.uk//wcframe?name=accessCompanyInfo Select and Access Company Information - companies-house.gov.uk]
+:* [https://play.google.com/store/apps/details?id=org.geometerplus.zlibrary.ui.android FBReader - google play<br> - read phone status and identity<br> - is geometerplus.com but tells google: geometerplus.org]
+:* [http://dictionary-api.org/node/7 Geometer Plus LLC joined the Open Dictionary API Alliance]
+:* [http://xenaspace.com/en FBReader.org website - Xena Shurubura]
+:* [http://sourceforge.net/projects/crengine/ CoolReader - Vadim Lopatin] 
+:* [https://play.google.com/store/apps/details?id=org.coolreader CoolReader - Vadim Lopatin - play.google.com]
+
+==[[epub]] reading on [[Linux]]==
+essential for [[epub]] reading on [[Linux]], only other choice is [http://sourceforge.net/projects/crengine/ CoolReader] for non-[[KDE]]
+::* FBReader & CoolReader are more android focused.
+:* [[Evince]] only supports: [https://wiki.gnome.org/Apps/Evince PDF,Postscript,djvu,tiff,dvi,XPS,SyncTex,cbr,cbz,cb7,cbt]
+:*[https://webcache.googleusercontent.com/search?q=cache:http%3A%2F%2Funsolicitedbutoffered.blogspot.com%2F2011%2F12%2Fepub-support-in-linux-okular-fbreader.html EPUB Support in Linux: Okular, FBReader, and Calibre]
+
+==reading on handhelds==
+* [http://news.softpedia.com/news/FBReader-for-Android-Updated-with-Support-for-Slovoed-Dictionaries-252458.shtml FBReader Android Supports Slovo]
+* [http://goodereader.com/blog/spotlight-on-android/fbreader-adds-drm-to-attract-content-device-partners fbreader adds drm]
+* [http://goodereader.com/blog/electronic-readers/yotaphone-adds-fbreader-to-allow-for-better-ebooks-reading-choice yotaphone adds fbreader]
+* [http://goodereader.com/blog/electronic-readers/top-7-e-reading-apps-for-the-sony-z3 top reading apps for sony-z3]
+
+==See also==
+{{Portal|Free software}}
+{{Div col||20em}}
+* [[Okular]]
+* [[CoolReader]]
+* [[STDU Viewer]]
+* [[Blio]]
+* [[Kitabu]]
+* [[EPUB]]
+* [[Ebook]]
+* [[Ebook reader]]
+* [[Comparison of e-book readers]]
+{{Div col end}}
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|fbreader.org}}
+* {{F-Droid|org.geometerplus.zlibrary.ui.android|FBReader}}
+* [http://howtobuildfbreaderj.blogspot.com/2012/01/how-to-build-fbreaderj-fbreader-on.html Help building FBReaderJ (How to build)]
+* [http://www.androidcentral.com/apps-week-fbreader-playerpro-headless-and-more fbreader - androidcentral.com]
+* [http://wiki.mobileread.com/wiki/FBReader FBReader - Mobile Read Wiki]
+* [http://www.amazon.com/Geometer-Plus-FBReader/product-reviews/B006ZDAZ6K FBReader by Geometer Plus: Customer Reviews (4.3 stars: 5 stars 55%, 4 stars 31%)]
+* [http://www.pocketables.com/2012/04/fbreader-is-a-better-ebook-reader.html FBReader is a better ebook reader - Pocketables]
+* [http://the-digital-reader.com/2014/04/10/fbreader-is-adding-support-for-drm-ed-ebooks-but-not-for-the-reasons-you-think/ FBReader is Adding Support for DRM-ed eBooks, But Not For the Reasons You Think - the-digital-reader.com]
+* [http://www.linuxinsider.com/story/71575.html FBReader Has Encyclopedic Knowledge of E-Book Formats - LinuxInsider]
+* [http://www.techrepublic.com/blog/five-apps/five-easy-to-use-desktop-ebook-readers/ Five easy to use desktop ebook readers - TechRepublic (By Jack Wallen, November 21, 2012)]
+* [https://apps.ubuntu.com/cat/applications/saucy/fbreader/ e-book reader (fbreader) — Ubuntu Apps Directory]
+* [http://goodereader.com/blog/tablet-slates/the-top-5-best-ereader-apps-for-android-tablets The Top 5 Best eReader apps for Android Tablets - Oakbranch Media Inc.]
+* [http://www.makeuseof.com/tag/dont-like-amazon-alternatives-to-the-kindle-ebook-reader-app-for-android/ Don't Like Amazon? Alternatives To The Kindle eBook Reader App For Android - makeuseof.com]
+<!-- * Google search: site:www.the-ebook-reader.com FBReader -->
+<!-- * Google search: site:the-digital-reader.com FBReader -->
+* [http://wapreview.com/3232/ O’Reilly’s Mobile Web eBook Reader - Bookworm – Wap Review]
+<!-- * [http://www.teleread.com/?s=FBReader] -->
+* [http://www.teleread.com/review/app-review-fbreader/ App review: FBReader – Immersive mode and more. - Juli Monroe, July 21, 2014] - [http://www.teleread.com/faqs/ TeleRead]
+
+<!--navbox-->
+{{Ebooks}}
+
+[[:Category:Linux text-related software]]
+[[:Category:Embedded Linux]]
+[[:Category:Free multimedia software]]
+[[:Category:Free software programmed in C++]]
+[[:Category:Free software programmed in Java (programming language)]]
+[[:Category:EPUB readers]]
+[[:Category:Free and open-source Android software]]
+
+{{DEFAULTSORT:Fbreader}}
+
+
+{{Linux-stub}}
